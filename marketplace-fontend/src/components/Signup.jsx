@@ -1,17 +1,19 @@
 import { useState } from "react";
 import { registerUser } from "../services/UserService";
+import { useNavigate } from "react-router-dom";
 
 function Signup() {
   const [email, setemail] = useState(" ");
   const [userName, setuserName] = useState(" ");
   const [password, setpassword] = useState(" ");
-
+  const navigate = useNavigate();
     function saveUser(e) {
         e.preventDefault();
         const user = { email, userName, password };
         console.log(user);
         registerUser(user).then((response) => {
             console.log(response.data);
+            navigate("/login");
         });
     }
 
