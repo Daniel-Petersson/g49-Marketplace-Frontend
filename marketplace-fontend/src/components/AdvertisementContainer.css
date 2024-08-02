@@ -1,0 +1,10 @@
+.advertisement-container {
+    padding-top: 20px;
+}
+
+.advertisement-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
