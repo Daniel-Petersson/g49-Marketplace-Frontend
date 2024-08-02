@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="#">Market Place</a>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <Link className="navbar-brand m-2" to="/">Market Place</Link>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
@@ -18,6 +18,7 @@ function Header() {
         </ul>
       </div>
     </nav>
+    
   );
 }
 
