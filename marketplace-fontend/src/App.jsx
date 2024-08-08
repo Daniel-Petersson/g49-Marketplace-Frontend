@@ -6,6 +6,8 @@ import Signup from "./components/Signup";
 import Login from "./components/Login";
 import UserProfile from "./components/UserProfile";
 import AdvertisementContainer from "./components/AdvertisementContainer";
+import CreateAdvertisement from "./components/CreateAdvertisement";
+import CreateUserProfile from "./components/CreateUserProfile";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route path="/userprofile" element={<UserProfile />} />
+          <Route path="/create-advertisement" element={<CreateAdvertisement />} />
+          <Route path="/create-userprofile" element={<CreateUserProfile/>} />
         </Routes>
       </BrowserRouter>
     </>

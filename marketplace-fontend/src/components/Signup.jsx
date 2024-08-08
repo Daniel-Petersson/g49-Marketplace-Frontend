@@ -13,7 +13,7 @@ function Signup() {
         console.log(user);
         registerUser(user).then((response) => {
             console.log(response.data);
-            navigate("/login");
+            navigate("/create-userprofile");
         });
     }
 

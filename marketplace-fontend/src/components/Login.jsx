@@ -4,7 +4,6 @@ import { authenticateUser } from '../services/UserService';
 
 function Login() {
   const [email, setEmail] = useState('');
-  const [userName, setUserName] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
@@ -43,15 +42,7 @@ function Login() {
                     onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
-                <div className="form-group">
-                  <label>Username</label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    value={userName}
-                    onChange={(e) => setUserName(e.target.value)}
-                  />
-                </div>
+            
                 <div className="form-group">
                   <label>Password</label>
                   <input
